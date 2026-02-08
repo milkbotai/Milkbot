@@ -46,17 +46,9 @@ Ingests real-time National Weather Service data across 10 major U.S. cities, bui
 
 ---
 
-## Coming Soon
+### [Binary Rogue HQ](https://github.com/milkbotai/BinaryRogue)
 
-### Binary Rogue
-
-```
-> SYSTEM INITIALIZING...
-> LOADING MODULES... ██████████████░░░░ 78%
-> STATUS: AWAITING DEPLOYMENT
-```
-
-Not everything needs an explanation yet.
+Company doctrine, agent standards, and the canonical SOUL.md. Auto-synced to all agent repos via GitHub Actions.
 
 ---
 

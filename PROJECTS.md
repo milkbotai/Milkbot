@@ -45,7 +45,7 @@ install.sh (root, 11 steps)
 - 54 PRD stories implemented
 - 4-phase security audit completed (GO recommendation)
 - 409 tests passing (297 static + 18 integration + 94 dashboard)
-- 17 workspace personality files
+- 18 workspace personality files
 - 7 runtime scripts (health, backup, alert, commit, monitor, prune, resume)
 
 ---
