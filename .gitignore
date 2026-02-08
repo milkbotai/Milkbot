@@ -1,0 +1,29 @@
+# Secrets
+.env
+*.pem
+*.key
+credentials.json
+drive-credentials.json
+
+# Python
+__pycache__/
+*.pyc
+venv/
+.venv/
+
+# Node
+node_modules/
+
+# OS
+.DS_Store
+._*
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Logs
+*.log
