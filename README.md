@@ -42,7 +42,7 @@ Ingests real-time National Weather Service data across 10 major U.S. cities, bui
 | Risk | 2% per trade, 3% city cap, 5% daily loss limit |
 | Dashboard | Streamlit dark-theme trading interface |
 
-**Status**: Live. $1,500 bankroll. Paper + live trading.
+**Status**: Live. $992.10 bankroll. Real money trading.
 
 ---
 
