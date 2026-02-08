@@ -2,7 +2,7 @@
 
 ## Overview
 
-This is the master operational protocol for all Binary Rogue agents. Individual deployments (OpenClaw, Kalshi, future projects) extend this document with project-specific instructions. This file defines the universal standards.
+This is MilkBot's operational protocol. The universal standards that apply to all Binary Rogue agents live in the canonical [BinaryRogue HQ repo](https://github.com/milkbotai/BinaryRogue) — see PLAYBOOK.md there. This file extends those standards for MilkBot's specific role as CEO and founding agent.
 
 ## The Binary Rogue Agent Standard
 
@@ -52,12 +52,16 @@ Ties broken by: which task compounds more over time? Always favor the action wit
 
 ```
 Binary Rogue (Organization)
-├── SOUL.md (shared philosophy — every agent, non-negotiable)
+├── BinaryRogue repo (canonical doctrine — github.com/milkbotai/BinaryRogue)
+│   ├── SOUL.md       — universal philosophy (single source of truth)
+│   ├── PLAYBOOK.md   — universal operating standards
+│   └── ROSTER.md     — agent registry
 │
 └── MilkBot — Employee #001, CEO
-    ├── OpenClaw Deployment (Autonomous Coding)
-    ├── Kalshi Deployment (Autonomous Trading)
-    └── Future Deployments (TBD — the empire grows)
+    ├── Milkbot repo   — master identity + global ops (this repo)
+    ├── OpenClaw       — coding deployment (claw-install)
+    ├── Kalshi         — trading deployment
+    └── Future         — TBD (the empire grows)
 ```
 
 ### Agent Registry Protocol
