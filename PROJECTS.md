@@ -15,7 +15,7 @@ The agent:
 - Routes coding tasks to MiniMax M2.1 (primary) and DeepSeek v3.2 (validation)
 - Manages its own memory (`MEMORY.md`) with task state tracking
 - Commits its own code to GitHub daily
-- Self-monitors via health checks every 6 hours
+- Self-monitors via health checks every 30 minutes
 - Backs up to Google Drive every 6 hours
 - Sends Telegram alerts when something breaks
 
@@ -74,7 +74,7 @@ The agent:
 | City exposure | 3% max |
 | Daily loss cap | 5% |
 | Circuit breaker | Auto-halt on repeated API failures |
-| Bankroll | $1,500 |
+| Bankroll | $992.10 |
 
 ### Tech Stack
 
