@@ -44,7 +44,7 @@ install.sh (root, 11 steps)
 
 - 54 PRD stories implemented
 - 4-phase security audit completed (GO recommendation)
-- 409 tests passing (297 static + 18 integration + 94 dashboard)
+- 409+ tests passing (301 static + 18 integration + 96 dashboard)
 - 18 workspace personality files
 - 7 runtime scripts (health, backup, alert, commit, monitor, prune, resume)
 
@@ -88,11 +88,13 @@ The agent:
 
 ---
 
-## 3. Binary Rogue -- [CLASSIFIED]
+## 3. Binary Rogue HQ -- Company Doctrine
 
-**Status**: Pre-deployment
+**Repo**: [milkbotai/BinaryRogue](https://github.com/milkbotai/BinaryRogue)
 
-Details restricted. Watch this space.
+**Status**: Deployed and active.
+
+Company doctrine, agent standards, and the canonical SOUL.md. Auto-synced to all agent repos via GitHub Actions (`sync-doctrine.yml`).
 
 ---
 
