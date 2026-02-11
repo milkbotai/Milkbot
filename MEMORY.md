@@ -1,24 +1,18 @@
-# MEMORY - Task Management
+# Operational Memory
 
-## Active Tasks
+## Recent Events
+<!-- Recent tasks, conversations, and outcomes go here -->
 
-### Task: SETUP_COMPLETE
-- **TITLE**: Initial setup
-- **STATUS**: DONE
-- **APPROVAL_REQUIRED**: no
-- **DESCRIPTION**: Installation complete
-- **NEXT_STEP**: Await user tasks
-- **CREATED_AT**: 2026-02-06 19:21 EST
-- **UPDATED_AT**: 2026-02-06 21:00 EST
+## Active Context
+<!-- Current goals, in-progress work, and pending items go here -->
 
-## Task Template
-```markdown
-## Task: {ID}
-- **TITLE**: Brief name
-- **STATUS**: QUEUED | IN_PROGRESS | BLOCKED | DONE
-- **APPROVAL_REQUIRED**: yes | no
-- **DESCRIPTION**: What this does
-- **NEXT_STEP**: Specific action
-- **CREATED_AT**: YYYY-MM-DD HH:MM EST
-- **UPDATED_AT**: YYYY-MM-DD HH:MM EST
-```
+## Long-term Learnings
+<!-- Patterns, best practices, and recurring insights go here -->
+
+## Automated Learnings
+<!-- Auto-populated by outcome-learner.sh (daily at 2 AM) -->
+<!-- Each entry: [timestamp] Learning cycle: X/Y succeeded (Z%), avg Nms -->
+<!-- Oldest entries are pruned when this section exceeds 30 lines -->
+
+## Important Notes
+<!-- Critical reminders, constraints, and escalation notes go here -->

@@ -1,38 +1,44 @@
-# ESCALATION - Approval Workflows
+# ESCALATION — Approval Workflows
 
-These levels are guidelines for the OpenClaw agent's behavior. They are not
-enforced by code gates - the agent is expected to self-classify actions and
-follow these rules based on its SOUL.md instructions.
+> See also: AGENTS.md § Escalation Matrix for the quick-reference table.
+
+These levels are guidelines for agent behavior. They are not enforced by code
+gates — agents self-classify actions and follow these rules per SOUL.md.
 
 ## Levels
 
 ### Level 0: Autonomous
-- Bug fixes, refactoring, documentation, maintenance
-- No approval needed; agent proceeds independently
+- Bug fixes, refactoring, documentation, maintenance, health self-healing
+- No approval needed — proceed independently
+- Log what was done in MEMORY.md
 
 ### Level 1: Approval Required
-- New features, architecture changes, external APIs, budget >$10
-- Agent should pause and request approval via Telegram alert
+- New features, architecture changes, external API integrations, budget > $10
+- Pause and request approval via Telegram alert
+- Wait for owner response before proceeding
 
 ### Level 2: Alert Then Proceed
-- Performance issues, health check failures, budget warnings
-- Agent sends Telegram notification then continues
+- Performance degradation, health check warnings, budget approaching 75%
+- Send Telegram notification, then continue working
+- Log the alert and any action taken
 
 ### Level 3: Emergency Halt
-- Security breach, corruption, budget exceeded, crash loops
-- Agent sends alert and stops all work
+- Security breach, data corruption, budget exceeded, crash loop (3+ restarts)
+- Send Telegram alert immediately
+- Stop all non-critical work until owner responds
 
 ## Approval Methods
 
 | Method | Status | Notes |
 |--------|--------|-------|
-| Telegram alert (one-way) | Implemented | `alert-telegram.sh` sends notifications |
-| Telegram commands (`/approve`) | Not implemented | Would require polling daemon or webhook |
+| Telegram alert (one-way) | Active | `alert-telegram.sh` sends notifications |
+| Telegram commands (`/approve`) | Not implemented | Would need polling daemon or webhook |
 | Dashboard approval button | Not implemented | Dashboard is read-only monitoring |
-| Direct edit of MEMORY.md | Available | User can SSH in and edit directly |
+| Direct edit of MEMORY.md | Available | Owner SSHs in and edits directly |
+| Redis task queue | Available | Owner can push approval via `binaryrogue:tasks` |
 
-## Current Implementation
-The only enforced mechanism is Telegram **alerting** (one-way). The agent
-classifies its own actions and sends alerts for Level 2+. For Level 1 tasks
-requiring approval, the agent pauses and the user responds via direct
-MEMORY.md edit or by restarting the service after review.
+## Current State
+The only enforced mechanism is Telegram **alerting** (one-way). Agents
+self-classify their actions and send alerts for Level 2+. For Level 1 tasks
+requiring approval, the agent pauses and the owner responds by editing
+MEMORY.md or restarting the service after review.

@@ -4,7 +4,7 @@
 1. Ubuntu boots
 2. Systemd starts multi-user.target
 3. `auto-resume.sh` runs (ExecStartPre) - validates workspace, detects incomplete tasks
-4. OpenClaw main service starts (`/opt/openclaw/bin/openclaw start`)
+4. OpenClaw main service starts (`npx openclaw start`)
 5. Dashboard service starts independently (port 8501)
 6. Health check timer activates (first run at 5min, then every 30min)
 7. Backup timer activates (first run at 10min, then every 6h)

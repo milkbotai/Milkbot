@@ -8,7 +8,7 @@
 ## What's Backed Up
 Archive includes (from /opt/openclaw):
 - `workspace/` - All .md files, memory/ folder
-- `config/` - Provider configs, systemd units, logrotate, sudoers (excludes .env, drive-credentials.json)
+- `config/` - Provider configs, systemd units, logrotate, sudoers (excludes .env, google-credentials.json)
 - `scripts/` - All runtime scripts
 
 Excludes: `logs/`, `backups/`, `venv/`, `bin/`

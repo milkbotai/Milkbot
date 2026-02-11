@@ -19,7 +19,7 @@
 
 ## Google
 - Gmail Password: xxxx-xxxx-xxxx-xxxx
-- Drive Credentials: /opt/openclaw/config/drive-credentials.json
+- Drive Credentials: /opt/openclaw/config/google-credentials.json
 
 ## Cloudflare
 - API Token: xxxxx

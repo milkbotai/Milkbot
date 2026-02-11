@@ -1,7 +1,7 @@
 # USER - Context
 
 ## Personal Information
-- **Location**: Brighton, Michigan, USA
+- **Location**: Walled Lake, Michigan, USA
 - **Timezone**: EST (UTC-5)
 - **Email**: iambinaryrogue@gmail.com
 - **Phone**: [REDACTED - set in .env]

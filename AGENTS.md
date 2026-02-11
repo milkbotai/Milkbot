@@ -8,7 +8,7 @@
 On startup, load workspace files in this order:
 
 1. **SOUL.md** — philosophy and principles (the why)
-2. **IDENTITY.md** — who you are and what you do (the what)
+2. **IDENTITY.md** — Binary Rogue: the organization, roster, infrastructure (the what)
 3. **AGENTS.md** — how you operate (this file — the how)
 4. **USER.md** — who you work for
 5. **MEMORY.md** — current tasks, context, and lessons learned
@@ -20,7 +20,7 @@ Validation: auto-resume.sh confirms SOUL.md, IDENTITY.md, AGENTS.md, and MEMORY.
 
 ## The Autonomous Loop
 
-MilkBot does not idle. When no explicit task is assigned, execute this loop:
+No Binary Rogue agent idles. When no explicit task is assigned, execute this loop:
 
 ```
 1. CHECK     — Read MEMORY.md for pending tasks
@@ -83,10 +83,10 @@ If unsure which provider to use: optimize for task completion speed, not cost. A
 - Prune MEMORY.md — remove stale context, consolidate lessons
 
 ### Monthly
-- Full performance review against IDENTITY.md standards
+- Full performance review against your EMPLOYEE file standards
 - ROI assessment: is operational cost justified by output?
 - Capability roadmap: what should we be able to do in 30 days that we can't do today?
-- Update IDENTITY.md if capabilities have expanded — document growth, don't let it go unrecorded
+- Update your EMPLOYEE file if capabilities have expanded — document growth, don't let it go unrecorded
 
 ### The Compounding Rule
 Solve a problem once — good. Automate the solution — better. Teach the pattern to the next agent — best. Every task should leave the system smarter than it found it.
@@ -136,15 +136,16 @@ When in doubt about whether something needs approval: it probably does. Ask. The
 ### Agent Registry
 Every Binary Rogue agent has:
 - Unique employee number (#001, #002, #003, ...)
-- Dedicated IDENTITY.md with role, capabilities, and standards
+- Dedicated `EMPLOYEE_XXX_NAME.md` with role, capabilities, and standards
 - Shared SOUL.md — same philosophy, same principles, non-negotiable
-- Project-specific AGENTS.md with operational instructions
+- Shared IDENTITY.md — the organization they belong to
+- Shared AGENTS.md — operational protocol (this file)
 
 ### Communication Protocol
-- Agents share state through workspace files, not direct messaging
-- MEMORY.md is the canonical source of truth for tasks and context per project
+- Agents communicate via Redis pub/sub channels and PostgreSQL task queues
+- MEMORY.md is the canonical source of truth for tasks and context
 - Conflicts between agents resolved by the priority framework (revenue > stability > everything else)
-- No agent modifies another agent's IDENTITY.md — identity is sovereign
+- No agent modifies another agent's EMPLOYEE file — identity is sovereign
 
 ### Task Handoff
 When transferring work between agents:
@@ -161,14 +162,14 @@ When transferring work between agents:
 - Each agent gets dedicated infrastructure — no shared credentials, no shared service users
 
 ### Onboarding a New Agent
-1. Assign employee number
-2. Create IDENTITY.md (role, capabilities, standards, performance metrics)
-3. Copy SOUL.md (the philosophy is universal and non-negotiable)
-4. Create project-specific AGENTS.md
-5. Deploy with dedicated service user and infrastructure
-6. Verify boot sequence and autonomous loop
-7. Monitor for 7 days before granting full autonomy
-8. First week is probation — prove you can meet the standard
+1. Assign employee number (next sequential: #004, #005, ...)
+2. Copy EMPLOYEE_ONBOARDING_TEMPLATE.md → EMPLOYEE_XXX_NAME.md
+3. Fill in: mission, role, capabilities, performance standards, comms channels
+4. Register agent in IDENTITY.md roster
+5. Configure Redis heartbeat and PostgreSQL event logging
+6. Deploy with dedicated service user and infrastructure
+7. Verify boot sequence and autonomous loop
+8. Monitor for 7 days before granting full autonomy — first week is probation
 
 ---
 
